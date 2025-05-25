@@ -75,7 +75,7 @@ export default function Input() {
         <Text w={"22px"}>{count}</Text>
       </HStack>
       <HStack justifyContent={"space-between"}>
-        <Text>성장 패키지 결제 여부</Text>
+        <Text>월정액 결제 여부</Text>
         <Switch.Root
           colorPalette={"yellow"}
           checked={hasPackage}
