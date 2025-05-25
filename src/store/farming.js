@@ -2,8 +2,8 @@ import { create } from 'zustand';
 import { calculateFarmingEfficiency, getSummaryRows } from "@/utils/farming";
 
 export const useFarmingStore = create((set, get) => ({
-  stage: [1],
-  count: [1],
+  stage: [11],
+  count: [4],
   hasPackage: false,
   table: [],
   summary: [],
