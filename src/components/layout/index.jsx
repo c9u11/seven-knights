@@ -1,5 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import Nav from "./Nav";
+import Analytics from "@vercel/analytics/react";
 
 export default function BaseLayout({ children }) {
   return (
@@ -13,6 +14,7 @@ export default function BaseLayout({ children }) {
     >
       <Nav />
       {children}
+      <Analytics />
     </Flex>
   );
 }
