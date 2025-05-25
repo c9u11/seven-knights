@@ -1,0 +1,86 @@
+const FREE_EXP = [
+  760,
+  790,
+  820,
+  850,
+  880,
+  910,
+  940,
+  970,
+  1000,
+  1030,
+  1060,
+  1090,
+  1120,
+  1150,
+  1180,
+  1210,
+  1240,
+  1270
+]
+
+const PAID_EXP = [
+  836,
+  869,
+  902,
+  935,
+  968,
+  1001,
+  1034,
+  1067,
+  1100,
+  1133,
+  1166,
+  1199,
+  1232,
+  1265,
+  1298,
+  1331,
+  1364,
+  1397
+]
+
+const MAX_EXP = 12500;
+
+const FREE_MAX_STAGE_RUNS = [
+  Math.ceil(MAX_EXP / FREE_EXP[0]),
+  Math.ceil(MAX_EXP / FREE_EXP[1]),
+  Math.ceil(MAX_EXP / FREE_EXP[2]),
+  Math.ceil(MAX_EXP / FREE_EXP[3]),
+  Math.ceil(MAX_EXP / FREE_EXP[4]),
+  Math.ceil(MAX_EXP / FREE_EXP[5]),
+  Math.ceil(MAX_EXP / FREE_EXP[6]),
+  Math.ceil(MAX_EXP / FREE_EXP[7]),
+  Math.ceil(MAX_EXP / FREE_EXP[8]),
+  Math.ceil(MAX_EXP / FREE_EXP[9]),
+  Math.ceil(MAX_EXP / FREE_EXP[10]),
+  Math.ceil(MAX_EXP / FREE_EXP[11]),
+  Math.ceil(MAX_EXP / FREE_EXP[12]),
+  Math.ceil(MAX_EXP / FREE_EXP[13]),
+  Math.ceil(MAX_EXP / FREE_EXP[14]),
+  Math.ceil(MAX_EXP / FREE_EXP[15]),
+  Math.ceil(MAX_EXP / FREE_EXP[16]),
+  Math.ceil(MAX_EXP / FREE_EXP[17]),
+]
+const PAID_MAX_STAGE_RUNS = [
+  Math.ceil(MAX_EXP / PAID_EXP[0]),
+  Math.ceil(MAX_EXP / PAID_EXP[1]),
+  Math.ceil(MAX_EXP / PAID_EXP[2]),
+  Math.ceil(MAX_EXP / PAID_EXP[3]),
+  Math.ceil(MAX_EXP / PAID_EXP[4]),
+  Math.ceil(MAX_EXP / PAID_EXP[5]),
+  Math.ceil(MAX_EXP / PAID_EXP[6]),
+  Math.ceil(MAX_EXP / PAID_EXP[7]),
+  Math.ceil(MAX_EXP / PAID_EXP[8]),
+  Math.ceil(MAX_EXP / PAID_EXP[9]),
+  Math.ceil(MAX_EXP / PAID_EXP[10]),
+  Math.ceil(MAX_EXP / PAID_EXP[11]),
+  Math.ceil(MAX_EXP / PAID_EXP[12]),
+  Math.ceil(MAX_EXP / PAID_EXP[13]),
+  Math.ceil(MAX_EXP / PAID_EXP[14]),
+  Math.ceil(MAX_EXP / PAID_EXP[15]),
+  Math.ceil(MAX_EXP / PAID_EXP[16]),
+  Math.ceil(MAX_EXP / PAID_EXP[17]),
+]
+
+export { FREE_EXP, PAID_EXP, MAX_EXP, FREE_MAX_STAGE_RUNS, PAID_MAX_STAGE_RUNS };

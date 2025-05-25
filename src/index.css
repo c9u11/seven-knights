@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "NetmarbleB";
+  src: url("/fonts/netmarbleB.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NetmarbleM";
+  src: url("/fonts/netmarbleM.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NetmarbleL";
+  src: url("/fonts/netmarbleL.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+:root {
+  font-family: "NetmarbleB", "NetmarbleM", "NetmarbleL", system-ui, Avenir,
+    Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #121212;
+  overflow: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+      circle at center,
+      light-dark(#fdfdfd, #121212) 70%,
+      light-dark(#f5f5f5, #222) 100%
+    )
+    0 0 / 120px 120px repeat;
+  transform: rotate(5deg); /* 원하는 만큼 조절 */
+  z-index: 0;
+  pointer-events: none;
+}
+
+body * {
+  z-index: 1;
+}
