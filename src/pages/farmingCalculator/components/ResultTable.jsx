@@ -7,7 +7,7 @@ export default function ResultTable() {
   return (
     <>
       {table.length > 0 && (
-        <VStack w={"100%"} flex={1} overflow={"hidden"}>
+        <VStack w={"100%"} minH={"500px"} overflow={"hidden"}>
           <Text>전체 결과</Text>
           <Table.ScrollArea borderWidth="1px" w={"100%"} flex={1}>
             <Table.Root size="sm" stickyHeader interactive>

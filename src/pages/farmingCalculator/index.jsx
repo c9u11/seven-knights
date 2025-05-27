@@ -11,7 +11,7 @@ const FarmingCalculator = () => {
       mx={"auto"}
       gap={6}
       h={"100%"}
-      overflow={"hidden"}
+      overflow={"auto"}
     >
       <Input />
       <Summary />
