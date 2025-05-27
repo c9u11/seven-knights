@@ -20,9 +20,11 @@ export default function Hero() {
           src="/images/hero/rudy.png"
           alt="rudy"
         />
-        <Card.Title>루디</Card.Title>
-        <Flex flex={1} flexWrap="wrap" gap={1}>
+        <VStack>
+          <Card.Title>루디</Card.Title>
           <Badge colorPalette={"orange"}>방어형</Badge>
+        </VStack>
+        <Flex flex={1} flexWrap="wrap" gap={1}>
           <Badge colorPalette={"gray"}>모험</Badge>
           <Badge colorPalette={"gray"}>무한의 탑</Badge>
           <Badge colorPalette={"gray"}>성장던전</Badge>
