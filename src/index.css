@@ -47,7 +47,7 @@ body::before {
   background: radial-gradient(
       circle at center,
       light-dark(#fdfdfd, #121212) 70%,
-      light-dark(#f5f5f5, #222) 100%
+      light-dark(#ddd, #222) 100%
     )
     0 0 / 120px 120px repeat;
   transform: rotate(5deg); /* 원하는 만큼 조절 */
