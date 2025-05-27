@@ -13,7 +13,7 @@ const config = defineConfig({
   theme: {
     tokens: {
       colors: {
-        primary: {
+        yellow: {
           50: "light-dark(#fffbeb,#fffbe6)",
           100: "light-dark(#fef3c7,#fff6d6)",
           200: "light-dark(#fde68a,#ffeaa1)",

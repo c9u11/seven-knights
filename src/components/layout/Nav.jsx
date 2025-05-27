@@ -20,7 +20,7 @@ export default function Nav() {
               key={route.path}
               asChild
               color={
-                location.pathname === route.path ? "primary.500" : undefined
+                location.pathname === route.path ? "yellow.500" : undefined
               }
             >
               <Link to={route.path}>{route.name}</Link>

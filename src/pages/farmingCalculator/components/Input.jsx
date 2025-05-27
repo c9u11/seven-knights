@@ -37,10 +37,10 @@ export default function Input() {
           >
             <Slider.Control>
               <Slider.Track>
-                <Slider.Range bg="primary.200" />
+                <Slider.Range bg="yellow.200" />
               </Slider.Track>
-              <Slider.Thumb bg="white" borderColor="primary.600" index={0}>
-                <Icon color={"primary.600"}>
+              <Slider.Thumb bg="white" borderColor="yellow.600" index={0}>
+                <Icon color={"yellow.600"}>
                   <PiSparkleFill />
                 </Icon>
               </Slider.Thumb>
@@ -62,10 +62,10 @@ export default function Input() {
           >
             <Slider.Control>
               <Slider.Track>
-                <Slider.Range bg="primary.200" />
+                <Slider.Range bg="yellow.200" />
               </Slider.Track>
-              <Slider.Thumb bg="white" borderColor="primary.600" index={0}>
-                <Icon color={"primary.600"}>
+              <Slider.Thumb bg="white" borderColor="yellow.600" index={0}>
+                <Icon color={"yellow.600"}>
                   <PiSparkleFill />
                 </Icon>
               </Slider.Thumb>
@@ -85,12 +85,12 @@ export default function Input() {
           <Switch.Control>
             <Switch.Thumb bg={"white"} />
             <Switch.Indicator fallback={<Text color={"gray"}>X</Text>}>
-              <Text color={"primary.600"}>O</Text>
+              <Text color={"yellow.600"}>O</Text>
             </Switch.Indicator>
           </Switch.Control>
         </Switch.Root>
       </HStack>
-      <Button onClick={calculate} variant="outline" colorPalette={"yellow"}>
+      <Button onClick={calculate} colorPalette={"yellow"}>
         계산하기
       </Button>
     </VStack>
