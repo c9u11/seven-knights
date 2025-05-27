@@ -32,7 +32,6 @@ body,
 html {
   margin: 0;
   padding: 0;
-  background: #121212;
   overflow: hidden;
   position: relative;
 }
@@ -51,10 +50,6 @@ body::before {
     )
     0 0 / 120px 120px repeat;
   transform: rotate(5deg); /* 원하는 만큼 조절 */
-  z-index: 0;
   pointer-events: none;
-}
-
-body * {
-  z-index: 1;
+  z-index: -1;
 }
