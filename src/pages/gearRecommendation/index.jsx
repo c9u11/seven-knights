@@ -1,4 +1,4 @@
-import { VStack, Text } from "@chakra-ui/react";
+import { VStack, Text, Flex } from "@chakra-ui/react";
 import { Tabs } from "@chakra-ui/react";
 import All from "./components/All";
 import GrowthDungeon from "./components/GrowthDungeon";
@@ -7,14 +7,7 @@ import Siege from "./components/Siege";
 
 const GearRecommendation = () => {
   return (
-    <VStack
-      w={"100%"}
-      maxW="800px"
-      mx={"auto"}
-      gap={6}
-      h={"100%"}
-      overflow={"hidden"}
-    >
+    <VStack w={"100%"} maxW="800px" mx={"auto"} gap={6} h={"100%"}>
       <Tabs.Root
         defaultValue="All"
         variant="plain"
@@ -22,6 +15,7 @@ const GearRecommendation = () => {
         w={"100%"}
         fitted
         size={"sm"}
+        h={"100%"}
       >
         <Tabs.List bg="bg.muted" rounded="l3" p="1">
           <Tabs.Trigger value="All">전체</Tabs.Trigger>
@@ -30,18 +24,20 @@ const GearRecommendation = () => {
           <Tabs.Trigger value="Siege">공성전</Tabs.Trigger>
           <Tabs.Indicator rounded="l2" />
         </Tabs.List>
-        <Tabs.Content value="All">
-          <All />
-        </Tabs.Content>
-        <Tabs.Content value="GrowthDungeon">
-          <GrowthDungeon />
-        </Tabs.Content>
-        <Tabs.Content value="Raid">
-          <Raid />
-        </Tabs.Content>
-        <Tabs.Content value="Siege">
-          <Siege />
-        </Tabs.Content>
+        <Flex h={"100%"} overflow={"auto"}>
+          <Tabs.Content value="All">
+            <All />
+          </Tabs.Content>
+          <Tabs.Content value="GrowthDungeon">
+            <GrowthDungeon />
+          </Tabs.Content>
+          <Tabs.Content value="Raid">
+            <Raid />
+          </Tabs.Content>
+          <Tabs.Content value="Siege">
+            <Siege />
+          </Tabs.Content>
+        </Flex>
       </Tabs.Root>
     </VStack>
   );
